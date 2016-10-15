@@ -11,10 +11,14 @@ import UIKit
 class FirstViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate {
 // MARK: Properties
     
-    @IBOutlet weak var expenseDesc: UITextField!
-    @IBOutlet weak var expenseAmt: UITextField!
-    @IBOutlet weak var expensesTable: UITableView!
-    weak var expenses = [];
+    @IBOutlet weak var expenseDesc: UITextField!;
+    
+    @IBOutlet weak var expenseAmt: UITextField!;
+    
+    @IBOutlet weak var expensesTable: UITableView!;
+    
+    var expenses: [String] = [];
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
